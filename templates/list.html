@@ -10,6 +10,7 @@
     {% for i in blog %}
     <li>
         <p>{{ i.title }}</p>
+        <img src="{{ i.image }}" alt="" width="450" height="250">
         <a href="/blog/{{ i.id }}">Подробнее</a>
     </li>
     {% endfor %}

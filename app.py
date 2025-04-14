@@ -15,7 +15,7 @@ cursor = db.cursor(dictionary=True)
 
 @app.route("/")
 def blog_list():
-    cursor.execute("SElECT id, title FROM blog")
+    cursor.execute("SElECT id, image, title FROM blog")
     blog = cursor.fetchall()
     return render_template("list.html", blog=blog)
 
